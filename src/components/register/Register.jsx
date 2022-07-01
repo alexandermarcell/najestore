@@ -19,7 +19,7 @@ function Register() {
       e.preventDefault();
   
       axios
-        .post('http://localhost:5050/api/v1/shop/users/register', {
+        .post('https://najeserver.herokuapp.com/api/v1/shop/users/register', {
           name,
           phone,
           address,

@@ -14,7 +14,7 @@ function Login() {
     const handleSubmit = (e) => {
       e.preventDefault();
 
-      let fetchUrl = 'http://localhost:5050/api/v1/shop/users/login';
+      let fetchUrl = 'https://najeserver.herokuapp.com/api/v1/shop/users/login';
 
       try {
         axios.post(fetchUrl, {

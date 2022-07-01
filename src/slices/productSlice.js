@@ -38,7 +38,7 @@ export function fetchProducts() {
         dispatch(getProducts())
 
         try {
-            const response = await fetch('http://localhost:5050/api/v1/shop/items')
+            const response = await fetch('https://najeserver.herokuapp.com/api/v1/shop/items')
             const data = await response.json()
             
             dispatch(getProductsSuccess(data))
